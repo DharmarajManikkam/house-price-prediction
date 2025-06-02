@@ -8,8 +8,8 @@ import pickle
 data = pd.read_csv("data/housing.csv")
 
 # Features and target
-X = data[['RM']]  # Average rooms per dwelling (change as needed)
-y = data['MEDV']  # Median house value
+X = data[['total_rooms']]  # Average rooms per dwelling (change as needed)
+y = data['median_house_value']  # Median house value
 
 # Split data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
